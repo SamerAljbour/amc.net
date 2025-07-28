@@ -1,9 +1,10 @@
 @extends('partials.frontend.app')
 @section('section')
-        <header id="ts-hero" class="ts-full-screen ts-separate-bg-element" data-mask-bottom-wn-color="#fff" data-bg-image="assets/img/home.jpg" data-bg-color="#737373" data-bg-image-opacity=".8" data-bg-parallax="scroll" data-bg-parallax-speed="3">
 
 
-            <!--HERO CONTENT -->
+            <div id="ts-hero"    class="ts-full-screen ts-separate-bg-element" data-mask-bottom-wn-color="#fff" data-bg-image="assets/img/home.jpg" data-bg-color="#737373" data-bg-image-opacity=".8" data-bg-parallax="scroll" data-bg-parallax-speed="3">
+
+                <!--HERO CONTENT -->
             <div class="container align-self-center align-items-center">
                 <div class="row">
                     <div class="col-md-6">
@@ -18,12 +19,12 @@
                 </a>
             </div>
             <!--end container-->
-        </header>
+            </div>
+
         <!--end #hero-->
 
         <!-- CONTENT -->
-        <main id="ts-content">
-
+{{--
             <!--WHAT YOU'LL GET *-->
             <section id="what-youll-get" class="ts-block text-center pt-4">
                 <div class="container">
@@ -75,11 +76,11 @@
                     <!--end row-->
                 </div>
                 <!--end container-->
-            </section>
+            </section> --}}
             <!--END HOW IT WORKS ************************************************************************************-->
 
             <!--PARTNERS ********************************************************************************************-->
-            <section id="partners" class="ts-block pb-3" data-bg-color="#f6f6f6" data-mask-top-nw-color="#fff">
+            {{-- <section id="partners" class="ts-block pb-3" data-bg-color="#f6f6f6" data-mask-top-nw-color="#fff">
                 <!--container-->
                 <div class="container">
                     <!--block of logos-->
@@ -103,11 +104,11 @@
                     <!--end logos-->
                 </div>
                 <!--end container-->
-            </section>
+            </section> --}}
             <!--END PARTNERS ****************************************************************************************-->
 
             <!--NUMBERS *********************************************************************************************-->
-            <section id="numbers" class="ts-block ts-background-is-dark ts-separate-bg-element" data-bg-image="assets/img/bg-table.jpg" data-bg-image-opacity=".5" data-bg-color="#2d2d2d" data-bg-parallax="scroll" data-bg-parallax-speed="3" data-mask-top-nw-color="#f6f6f6" data-mask-bottom-wn-color="#fff">
+            {{-- <section id="numbers" class="ts-block ts-background-is-dark ts-separate-bg-element" data-bg-image="assets/img/bg-table.jpg" data-bg-image-opacity=".5" data-bg-color="#2d2d2d" data-bg-parallax="scroll" data-bg-parallax-speed="3" data-mask-top-nw-color="#f6f6f6" data-mask-bottom-wn-color="#fff">
                 <div class="container">
                     <div class="ts-promo-numbers">
                         <div class="row">
@@ -143,11 +144,11 @@
                     <!--end ts-promo-numbers-->
                 </div>
                 <!--end container-->
-            </section>
+            </section> --}}
             <!--END NUMBERS *****************************************************************************************-->
 
             <!--ADVANCED FEATURES ***********************************************************************************-->
-            <section id="advanced-features" class="ts-block">
+            {{-- <section id="advanced-features" class="ts-block">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5 col-xl-5" data-animate="ts-fadeInUp">
@@ -176,44 +177,43 @@
                     <!--end row-->
                 </div>
                 <!--end container-->
-            </section>
+            </section> --}}
             <!--END ADVANCED FEATURES *******************************************************************************-->
 
             <!--RESPONSIVE ***********************************************************************************-->
             <section id="responsive" class="ts-block">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-7 col-xl-7 text-center" data-animate="ts-fadeInUp" data-delay="0.1s">
-                            <div class="px-3 mb-4">
-                                <img src="assets/img/image-device-02.png" class="mw-100" alt="">
-                            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-xl-7 text-center" data-animate="ts-fadeInUp" data-delay="0.1s">
+                        <div class="px-3 mb-4">
+                        <img src="{{ asset('assets/img/amc logo.png') }}" class="mw-100" alt="">
                         </div>
-                        <!--end col-xl-7-->
-                        <div class="col-md-5 col-xl-5" data-animate="ts-fadeInUp">
-                            <div class="ts-title">
-                                <h2>Responsive</h2>
-                            </div>
-                            <!--end ts-title-->
-                            <p>
-                                Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                                Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                            </p>
-                            <ul class="ts-list-colored-bullets">
-                                <li>Sed a venenatis mi, vel tempus neque. </li>
-                                <li>Diam in hendrerit facilisis, enim diam cursus augue.</li>
-                                <li>Nullam tellus turpis, molestie ac urna</li>
-                            </ul>
-                        </div>
-                        <!--end col-xl-5-->
                     </div>
-                    <!--end row-->
+                    <!--end col-xl-7-->
+                    <div class="col-md-5 col-xl-5" data-animate="ts-fadeInUp">
+                        <div class="ts-title">
+                            <h2>{{ __('home.about_us') }}</h2>
+                        </div>
+                        <!--end ts-title-->
+                        <p>
+                            {{ __('home.about_content') }}
+                        </p>
+                        <ul class="ts-list-colored-bullets">
+                            <li>{{ __('home.about_point1') }}</li>
+                            <li>{{ __('home.about_point2') }}</li>
+                            <li>{{ __('home.about_point3') }}</li>
+                        </ul>
+                    </div>
+                    <!--end col-xl-5-->
                 </div>
-                <!--end container-->
-            </section>
+                <!--end row-->
+            </div>
+            <!--end container-->
+</section>
             <!--END ADVANCED FEATURES *******************************************************************************-->
 
             <!--PRICING *********************************************************************************************-->
-            <section id="pricing" class="ts-block ts-separate-bg-element" data-bg-image="assets/img/bg-hand-mobile.jpg" data-bg-color="#000" data-bg-image-opacity=".5" data-bg-parallax="scroll" data-bg-parallax-speed="3" data-mask-top-nw-color="#fff" data-mask-bottom-wn-color="#eaeaea">
+            {{-- <section id="pricing" class="ts-block ts-separate-bg-element" data-bg-image="assets/img/bg-hand-mobile.jpg" data-bg-color="#000" data-bg-image-opacity=".5" data-bg-parallax="scroll" data-bg-parallax-speed="3" data-mask-top-nw-color="#fff" data-mask-bottom-wn-color="#eaeaea">
                 <div class="container">
                     <div class="ts-title text-center text-white">
                         <h2>Affordable Prices</h2>
@@ -314,11 +314,11 @@
                     <!--end row-->
                 </div>
                 <!--end container-->
-            </section>
+            </section> --}}
             <!--END PRICING *****************************************************************************************-->
 
             <!--BUY NOW *********************************************************************************************-->
-            <section id="buy-now" class="ts-block text-center pt-4" data-bg-color="#eaeaea" data-mask-bottom-wn-color="#fff">
+            {{-- <section id="buy-now" class="ts-block text-center pt-4" data-bg-color="#eaeaea" data-mask-bottom-wn-color="#fff">
                 <div class="container">
                     <div class="ts-title">
                         <h2>Buy The StartUps Now!</h2>
@@ -327,10 +327,10 @@
                     <!--end ts-title-->
                     <a href="#" class="btn btn-primary">Buy Now!</a>
                 </div>
-            </section>
+            </section> --}}
             <!--END BUY NOW *****************************************************************************************-->
 
-            <section id="our-clients" class="ts-block text-center py-4">
+            {{-- <section id="our-clients" class="ts-block text-center py-4">
                 <div class="container">
                     <div class="ts-title">
                         <h2>Our Clients</h2>
@@ -383,11 +383,11 @@
                     <!--end row-->
                 </div>
                 <!--end container-->
-            </section>
+            </section> --}}
             <!--end #our-clients.ts-block-->
 
             <!--SUBSCRIBE *******************************************************************************************-->
-            <section id="subscribe" class="ts-block ts-background-is-dark ts-separate-bg-element" data-bg-image="assets/img/bg-girl-book.jpg" data-bg-image-opacity=".1" data-bg-color="#5f8d87" data-bg-parallax="scroll" data-bg-parallax-speed="3" data-mask-top-nw-color="#fff" data-mask-bottom-wn-color="#fff">
+            {{-- <section id="subscribe" class="ts-block ts-background-is-dark ts-separate-bg-element" data-bg-image="assets/img/bg-girl-book.jpg" data-bg-image-opacity=".1" data-bg-color="#5f8d87" data-bg-parallax="scroll" data-bg-parallax-speed="3" data-mask-top-nw-color="#fff" data-mask-bottom-wn-color="#fff">
                 <div class="container">
                     <h3>Subscribe For The Latest News!</h3>
                     <form class="ts-form ts-form-email ts-labels-inside-input" data-php-path="assets/php/email.php">
@@ -411,11 +411,11 @@
                     <!--end ts-form-->
                 </div>
                 <!--end container-->
-            </section>
+            </section> --}}
             <!--END SUBSCRIBE ***************************************************************************************-->
 
             <!--FEATURES ********************************************************************************************-->
-            <section id="organize" class="ts-block pt-5">
+            {{-- <section id="organize" class="ts-block pt-5">
                 <div class="container">
                     <div class="ts-title text-center">
                         <h2>Organize Everything!</h2>
@@ -494,13 +494,13 @@
                     <!--end row-->
                 </div>
                 <!--end container-->
-            </section>
+            </section> --}}
             <!--END FEATURES ****************************************************************************************-->
 
-            <img class="ts-hr-skewed" src="assets/img/hr-skewed.png">
+            {{-- <img class="ts-hr-skewed" src="assets/img/hr-skewed.png"> --}}
 
             <!--OUR TEAM ********************************************************************************************-->
-            <section id="our-team" class="ts-block text-center">
+            {{-- <section id="our-team" class="ts-block text-center">
                 <div class="container">
                     <div class="ts-title">
                         <h2>Our Team</h2>
@@ -559,7 +559,7 @@
                     <!--end row-->
                 </div>
                 <!--end container-->
-            </section>
+            </section> --}}
             <!--END OUR TEAM ****************************************************************************************-->
             @push('scripts')
             <script>

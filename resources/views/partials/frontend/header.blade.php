@@ -1,5 +1,5 @@
             <!--NAVIGATION ******************************************************************************************-->
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top ts-separate-bg-element" data-bg-color="#1d1d1d">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top ts-separate-bg-element" style="background-color: black" data-bg-color="#1d1d1d">
                 <div class="container">
                     <a class="navbar-brand" href="#page-top">
                         <img src="assets/img/logo-w.png" alt="">
@@ -17,11 +17,17 @@
                             <a class="nav-item nav-link ts-scroll" href="#our-clients">Our Clients</a>
                             <a class="nav-item nav-link ts-scroll" href="#our-team">Team</a>
                             <a class="nav-item nav-link ts-scroll" href="#form-contact">Contact</a>
+                                @if (app()->getLocale() === 'ar')
+                                <a class="nav-item nav-link ts-scroll" href="{{ route('lang.switch', 'en') }}">English</a>
+                            @else
+                                <a class="nav-item nav-link ts-scroll" href="{{ route('lang.switch', 'ar') }}">العربية</a>
+                            @endif
+
                             <a class="ts-scroll btn btn-outline-light btn-sm m-1 px-3 ts-width__auto" href="#">
                                 <i class="fas fa-sign-in-alt ts-opacity__80 pr-2"></i>
                                 Log In
                             </a>
-                            <a class="ts-scroll btn btn-primary btn-sm m-1 px-3 ts-width__auto" href="#">Register</a>
+                            <a class="ts-scroll btn btn-primary btn-sm m-1 px-3 ts-width__auto" href="#">{{ __('home.Register') }}</a>
                         </div>
                         <!--end navbar-nav-->
                     </div>
