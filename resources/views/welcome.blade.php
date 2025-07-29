@@ -8,15 +8,15 @@
             <div class="container align-self-center align-items-center">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3 class="ts-opacity__50">We Are Introducing</h3>
-                        <h1>Startup Landing Page Pack</h1>
+                        <h3 class="ts-opacity__50">{{ __('home.We_are_Amc') }}</h3>
+                            <h1  style="width: 141%">{{ __('home.AMC') }}</h1>
                     </div>
                 </div>
-                <a href="#what-youll-get" class="btn btn-primary ts-scroll">Learn More</a>
-                <a href="https://vimeo.com/63502573" class="btn btn-outline-light video-popup">
+                {{-- <a href="#what-youll-get" class="btn btn-primary ts-scroll">Learn More</a> --}}
+                {{-- <a href="https://vimeo.com/63502573" class="btn btn-outline-light video-popup">
                     <i class="fa fa-play mr-2"></i>
                     Video
-                </a>
+                </a> --}}
             </div>
             <!--end container-->
             </div>
@@ -181,7 +181,7 @@
             <!--END ADVANCED FEATURES *******************************************************************************-->
 
             <!--RESPONSIVE ***********************************************************************************-->
-            <section id="responsive" class="ts-block">
+            <section id="about-us" class="ts-block">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 col-xl-7 text-center" data-animate="ts-fadeInUp" data-delay="0.1s">
@@ -567,7 +567,7 @@
             document.getElementsByClassName("ts-full-screen")[0].style.height = window.innerHeight + "px";
         }
 
-    // -Google map
+    // // -Google map
 
         var latitude = 34.038405;
         var longitude = -117.946944;
@@ -632,7 +632,7 @@
                 "visibility": "on"
             }]
         }];
-        google.maps.event.addDomListener(window, 'load', simpleMap(latitude, longitude, markerImage, mapStyle, mapElement));
+    //     google.maps.event.addDomListener(window, 'load', simpleMap(latitude, longitude, markerImage, mapStyle, mapElement));
     </script>
             @endpush
 

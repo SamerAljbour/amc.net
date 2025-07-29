@@ -1,0 +1,43 @@
+html[dir="rtl"] h1,
+.ts-h1 {
+    text-align: right !important;
+}
+html[dir="rtl"] h2,
+.ts-h2 {
+    text-align: right !important;
+}
+html[dir="rtl"] h3,
+.ts-h3 {
+    text-align: right !important;
+}
+html[dir="rtl"] h4,
+.ts-h4 {
+    text-align: right !important;
+}
+html[dir="rtl"] h5,
+.ts-h5 {
+    text-align: right !important;
+}
+html[dir="rtl"] h6,
+.ts-h6 {
+    text-align: right !important;
+}
+html[dir="rtl"] ul.ts-list-colored-bullets li:before {
+    padding-right: 0;
+    padding-left: 0.75rem;
+}
+html[dir="rtl"] .form-group {
+    text-align: right !important    ;
+}
+html[dir="rtl"] figure {
+    text-align: right !important    ;
+}
+html[dir="rtl"] p {
+    text-align: right !important    ;
+}
+html[dir="rtl"] ul {
+    text-align: right !important    ;
+}
+html[dir="rtl"] li {
+    text-align: right !important    ;
+}

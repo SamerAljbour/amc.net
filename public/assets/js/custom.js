@@ -370,20 +370,20 @@ $(document).ready(function ($) {
         $(this).html("").append("<span>" + text + "</span>").prepend("<div class='status'><i class='fas fa-circle-notch fa-spin spinner'></i></div>");
     });
 
-    $(".ts-form-email .btn[type='submit']").on("click", function (e) {
-        var $button = $(this);
-        var $form = $(this).closest("form");
-        var pathToPhp = $(this).closest("form").attr("data-php-path");
-        $form.validate({
-            submitHandler: function () {
-                $button.addClass("processing");
-                $.post(pathToPhp, $form.serialize(), function (response) {
-                    $button.addClass("done").find(".status").append(response).prop("disabled", true);
-                });
-                return false;
-            }
-        });
-    });
+    // $(".ts-form-email .btn[type='submit']").on("click", function (e) {
+    //     var $button = $(this);
+    //     var $form = $(this).closest("form");
+    //     // var pathToPhp = $(this).closest("form").attr("data-php-path");
+    //     $form.validate({
+    //         submitHandler: function () {
+    //             $button.addClass("processing");
+    //             $.post(pathToPhp, $form.serialize(), function (response) {
+    //                 $button.addClass("done").find(".status").append(response).prop("disabled", true);
+    //             });
+    //             return false;
+    //         }
+    //     });
+    // });
 
     $("form:not(.ts-form-email)").each(function () {
         $(this).validate();

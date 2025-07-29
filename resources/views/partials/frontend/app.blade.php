@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+     @if (app()->getLocale() === 'ar')
+        <link rel="stylesheet" href="{{ asset('assets/css/rtl.css') }}" />
+    @endif
     <title>StartUps - Startup Landing Page</title>
 
 </head>
