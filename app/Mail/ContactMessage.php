@@ -10,16 +10,18 @@ class ContactMessage extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $details;
+    public $data;
 
-    public function __construct(array $details)
+    public function __construct(array $data)
     {
-        $this->details = $details;
+        $this->data = $data;
     }
 
-    public function build(): ContactMessage
+    public function build()
     {
-        return $this->subject('New Contact Message')
-            ->view('emails.contact');
+        return $this->from($this->data['email'], $this->data['name']) // set sender
+            ->subject('New Contact Message')
+            ->view('emails.contact') // make sure this view exists
+            ->with(['details' => $this->data]);
     }
 }

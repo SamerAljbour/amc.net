@@ -22,22 +22,22 @@
                         <div class="col-md-4">
                             <h3>{{ __("footer.Contact_Us") }}</h3>
                             <address>
-                                <figure>
+                                {{-- <figure>
                                     2590 Rocky Road
                                     <br>
                                     Philadelphia, PA 19108
                                 </figure>
-                                <br>
+                                <br> --}}
                                 <figure>
                                     <div class="font-weight-bold">{{ __("footer.Email") }}:</div>
-                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=office@example.com" target="_blank" rel="noopener noreferrer">
-                                        office@example.com
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Info@amc-it.net" target="_blank" rel="noopener noreferrer">
+                                        Info@amc-it.net
                                     </a>
                                 </figure>
-                                <figure>
+                                {{-- <figure>
                                     <div class="font-weight-bold">{{ __("footer.Phone") }}:</div>
                                     +1 215-606-0391
-                                </figure>
+                                </figure> --}}
                                 {{-- <div class="font-weight-bold">Skype:</div>
                                 startups.agency --}}
                             </address>
