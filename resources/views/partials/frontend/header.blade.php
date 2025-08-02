@@ -3,7 +3,9 @@
                 <div class="container">
                     <a class="navbar-brand" href="#page-top"
                     style="{{ app()->getLocale() == 'ar' ? 'margin-left: 10px;' : '' }}">
-                            <img src="assets/img/logo-w.png" alt="">
+                            {{-- <img src="{{ asset('assets/img/AMC LOGO PNG 1.png') }}" width="50px" height="50px" alt=""> --}}
+                            AMC
+                            {{-- <img src="{{ asset('assets/img/amc logo.png') }}" alt=""> --}}
 
 </a>
 
