@@ -3,7 +3,7 @@
         <!--*********************************************************************************************************-->
         <footer id="ts-footer">
 
-            <div class="map ts-height__600px" id="map" data-mask-top-nw-color="#fff" data-mask-bottom-wn-color="#1f1f1f" style="height: 600px; overflow: hidden;">
+            {{-- <div class="map ts-height__600px" id="map" data-mask-top-nw-color="#fff" data-mask-bottom-wn-color="#1f1f1f" style="height: 600px; overflow: hidden;">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7234567890123!2d-117.94694400000001!3d34.038405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAyJzE4LjMiTiAxMTfCsDU2JzQ5LjAiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
                     width="100%"
@@ -14,7 +14,7 @@
                     referrerpolicy="no-referrer-when-downgrade"
                     title="AMC Location Map">
                 </iframe>
-            </div>
+            </div> --}}
             <!--end map-->
             <section id="contact" class="ts-block ts-background-is-dark ts-separate-bg-element" data-bg-image="assets/img/bg-desk.jpg" data-bg-image-opacity=".1" data-bg-color="#1f1f1f" data-mask-bottom-wn-color="#000">
                 <div class="container">

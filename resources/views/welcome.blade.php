@@ -8,7 +8,7 @@
             <div class="container align-self-center align-items-center">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3 class="ts-opacity__50">{{ __('home.We_are_Amc') }}</h3>
+                        {{-- <h3 class="ts-opacity__50">{{ __('home.We_are_Amc') }}</h3> --}}
                             <h1  style="width: 141%">{{ __('home.AMC') }}</h1>
                     </div>
                 </div>
